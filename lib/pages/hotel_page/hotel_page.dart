@@ -18,7 +18,9 @@ class HotelPage extends StatelessWidget {
         ],
       ),
       body: const HotelList(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerTop,
       floatingActionButton: FloatingActionButton(
+          shape: const CircleBorder(),
           onPressed: () => context.read<HotelCubit>().getAll(),
           child: const Icon(Icons.refresh)),
     );
